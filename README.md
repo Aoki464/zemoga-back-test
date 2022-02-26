@@ -1,2 +1,2 @@
-# zemoga_back_test
+# zemoga-back-test
 Prueba backend zemoga
