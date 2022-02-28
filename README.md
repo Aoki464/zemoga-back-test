@@ -3,12 +3,13 @@ Prueba backend zemoga
 
 Para ejecutar el backEnd necesitaras lo siguiente:
 
-- Java 11
+- Java 11 (JDK 11)
+- IDE Eclipse (Eclipse IDE for Enterprise Java Developers - 2020-06)
 - Spring boot (Para instalar spring boot en eclipse puede seguir el siguiente enlace: https://www.youtube.com/watch?v=6Tuomy5INcY)
 - Tomcat 9.0 o mayor, no sirven versiones inferiores como la 8.5 debido a la version JDK 11 usada en el proyecto
 - Postman para probar el servicio post, estara adjunto al correo donde este el link de la prueba
 y en este estaran las URLs con ejemplos de los json con que se puede probar
-- A nivel de back, la API de twitter puede cargar los comentarios de cualquier usuario registrado en la red, a nivel de frontEnd se valida que solo cargue los registrados en la base de datos suministrada en la prueba
+- A nivel de back, la API de twitter puede cargar los comentarios de cualquier usuario registrado en la red, a nivel de frontEnd se valida que solo muestre los registrados en la base de datos suministrada en la prueba
 - Las librerias necesarias para el proyecto estan en un archivo POM, hay que realizar un "Maven update", en caso de ser necesario
 - En eclipse, montar el servidor tomcat y agregarlo en el IDE
 - La informacion de las versiones de las librerias se encuentra en la carpeta libreries del proyecto
