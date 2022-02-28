@@ -5,7 +5,7 @@ Para ejecutar el backEnd necesitaras lo siguiente:
 
 - Java 11
 - Spring boot (Para instalar spring boot en eclipse puede seguir el siguiente enlace: https://www.youtube.com/watch?v=6Tuomy5INcY)
-- Tomcat 9.0 o mayor, no sirven versiones inferiores como la 8.5
+- Tomcat 9.0 o mayor, no sirven versiones inferiores como la 8.5 debido a la version JDK 11 usada en el proyecto
 - Postman para probar el servicio post, estara adjunto al correo donde este el link de la prueba
 y en este estaran las URLs con ejemplos de los json con que se puede probar
 - A nivel de back, la API de twitter puede cargar los comentarios de cualquier usuario registrado en la red, a nivel de frontEnd se valida que solo cargue los registrados en la base de datos suministrada en la prueba
