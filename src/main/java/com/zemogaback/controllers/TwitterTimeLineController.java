@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -18,6 +19,7 @@ import com.zemogaback.interfaces.TwitterTimeLineService;
 
 @RestController
 @RequestMapping("timeLine")
+@CrossOrigin(origins = "http://localhost:4200")
 public class TwitterTimeLineController {
 	
 	private final Logger logger = LoggerFactory.getLogger(this.getClass());
@@ -31,14 +33,14 @@ public class TwitterTimeLineController {
 	
 	@GetMapping
 	@Transactional
-	public ResponseEntity<List<String>> get(@RequestParam(required=true, value= "screenName") String screenName,
+	public ResponseEntity<List<String>> get(@RequestParam(required=true, value= "twitterUser") String twitterUser,
 										@RequestParam(required=true, value= "countTweets") int countTweets){
-		System.out.println(screenName);
+		System.out.println(twitterUser);
 		try {
 			List<String> result = null;
 			ResponseEntity<List<String>> res;
-			if(Objects.nonNull(screenName)) {				
-				 result = twitterTimeLineService.getTweetTimeLine(screenName, countTweets);
+			if(Objects.nonNull(twitterUser)) {				
+				 result = twitterTimeLineService.getTweetTimeLine(twitterUser, countTweets);
 			} else {
 				res = new ResponseEntity<List<String>>(HttpStatus.BAD_REQUEST);
 				return res;

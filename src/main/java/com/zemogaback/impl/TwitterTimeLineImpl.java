@@ -20,7 +20,7 @@ public class TwitterTimeLineImpl implements TwitterTimeLineService{
 	Twitter twitter = new TwitterFactory().getInstance();
 	
 	@Override
-	public List<String> getTweetTimeLine(String screenName, int countTweets) throws TwitterException {
+	public List<String> getTweetTimeLine(String twitterUser, int countTweets) throws TwitterException {
 		 
 		//User userTwitter = twitter.verifyCredentials();
 		ArrayList<String> tweets = new ArrayList<String>();
@@ -28,7 +28,7 @@ public class TwitterTimeLineImpl implements TwitterTimeLineService{
 		try {  			
            // String user = userTwitter.getScreenName();
             Paging page = new Paging(1,countTweets);
-            List<Status> statuses = twitter.getUserTimeline(screenName, page);           
+            List<Status> statuses = twitter.getUserTimeline(twitterUser, page);           
             for (Status status : statuses) {
                 System.out.println("@" + status.getUser().getScreenName() + " - " + status.getText());
                 tweets.add("@" + status.getUser().getScreenName() + " - " + status.getText());
