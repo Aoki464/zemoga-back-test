@@ -14,7 +14,7 @@ y en este estaran las URLs con ejemplos de los json con que se puede probar
 - En eclipse, montar el servidor tomcat y agregarlo en el IDE
 - La informacion de las versiones de las librerias se encuentra en la carpeta libreries del proyecto
 - Las librerias principales del proyectos estan descritas en el archivo POM
-- Es posible que 
+- Las llaves(API KEY, API Secret key, Access token, Access token secret) para el archivo twitter4j.properties son las sumistradas en la prueba(Es muy IMPORTANTE pegarlas en el archivo antes de ejecutar el proyecto, sin estas las librerias de la api de twitter no funcionara)
 
 Horas de trabajo en backend(15 horas aprox)
 
