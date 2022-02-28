@@ -10,7 +10,7 @@ Para ejecutar el backEnd necesitaras lo siguiente:
 - Postman para probar el servicio post, estara adjunto al correo donde este el link de la prueba
 y en este estaran las URLs con ejemplos de los json con que se puede probar
 - A nivel de back, la API de twitter puede cargar los comentarios de cualquier usuario registrado en la red, a nivel de frontEnd se valida que solo muestre los registrados en la base de datos suministrada en la prueba
-- Las librerias necesarias para el proyecto estan en un archivo POM, hay que realizar un "Maven update", en caso de ser necesario
+- Las librerias necesarias para el proyecto estan en un archivo POM, hay que realizar un "Maven update", en caso de ser necesario, sea en eclipse o a travez de consola de comandos
 - En eclipse, montar el servidor tomcat y agregarlo en el IDE
 - La informacion de las versiones de las librerias se encuentra en la carpeta libreries del proyecto
 - Las librerias principales del proyectos estan descritas en el archivo POM
